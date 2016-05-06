@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block container %}
+<div class="container">
+    <form class="form-signin" action="" method="POST">
+        {{ form.csrf_token }}
+        <div class="form-signin-heading text-center">
+            <h1 class="sign-title">登 录</h1>
+            <img src="{{ url_for('static', filename='images/login-logo.png') }}" alt=""/>
+        </div>
+        <div class="login-wrap">
+            {{ form.username(class_="form-control",id='username',autofocus=true, required=true, placeholder=form.username.label.text) }}
+            {{ form.password(class_="form-control", required=true, placeholder=form.password.label.text) }}
+
+            <!--<input type="text" class="form-control" placeholder="User ID" autofocus>-->
+            <!--<input type="password" class="form-control" placeholder="Password">-->
+
+            <button class="btn btn-lg btn-login btn-block" type="submit">
+                登 录
+            </button>
+
+            <div class="registration">
+                还没有账号?
+                <a class="" href="{{ url_for('auth.register') }}">
+                    注 册
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Forgot Password ?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Enter your e-mail address below to reset your password.</p>
+                        <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+                        <button class="btn btn-primary" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+
+    </form>
+
+</div>
+
+
+{% block javascript %}
+{{ super() }}
+<script src="{{url_for('static', filename='js/busad/login.js')}}"></script>
+{% endblock %}
+
+{% endblock%}

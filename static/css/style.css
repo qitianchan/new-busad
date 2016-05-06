@@ -1,0 +1,509 @@
+body {
+    font-family:'微软雅黑' ,Georgia, "Times New Roman", Times, serif;
+    color: #f5f6f7;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+/*@media (min-width: 1200px) {*/
+    /*.container {*/
+        /*width: 970px;*/
+    /*}*/
+/*}*/
+
+
+/*
+ * Masthead for nav
+ */
+
+.busad-masthead {
+    background-color: #7266ba;
+    -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+                    box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+
+/* Nav links */
+.blog-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+    color: #fff;
+}
+.blog-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+}
+
+
+/*
+ * UserApp name and description
+ */
+
+.blog-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+.blog-description {
+    font-size: 20px;
+    color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+    padding: 15px;
+    margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* Pagination */
+.pager {
+    margin-bottom: 60px;
+    text-align: left;
+}
+.pager > li > a {
+    width: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+/*
+ * UserApp posts
+ */
+
+.blog-post {
+    margin-bottom: 60px;
+}
+.blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.blog-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+.form-control {
+    box-shadow: none;
+}
+.form-control:focus {
+    border-color: #7266ba;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(98, 84, 178, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(98, 84, 178, .6);
+}
+
+.login {
+    background-color: #F0F3F4;
+    height: 100%;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+
+}
+.login-form {
+    width: 300px;
+}
+.login-header {
+    text-align: center;
+}
+.no-border, .no-borders {
+    border-color: transparent;
+    border-width: 0;
+}
+
+.btn {
+    font-weight: 500;
+    border-radius: 2px;
+    outline: 0!important;
+}
+
+
+
+.btn-primary {
+    color: #ffffff !important;
+    background-color: #6254B2;
+    border-color: #6254B2;
+}
+.btn-primary:disabled {
+    background-color: #9588B2;
+    border-color: #9588B2;
+}
+
+.btn-primary:hover, .btn-primary:focus,
+.btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primaryr {
+    background-color: #6254B2
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.busad-background {
+    padding-top: 50px;
+    background-color: #F2F5E9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.busad-content {
+    background-color: white;
+    /*position: relative;*/
+}
+
+.page {
+    width: 100%;
+    min-height: 600px;
+    border: 1px solid #DBDFD6;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    background: #FFF none repeat scroll 0 0;
+    opacity: 1;
+    position: relative;
+    transform: none;
+    transform-origin: 50% 0px 0px;
+}
+
+.page-inner {
+    padding: 40px 40px 40px;
+    min-height: 600px;
+    box-sizing: border-box;
+    /*background-color: #EBEBE8;*/
+}
+
+.page-inner h2,h3,h4{
+    color: #9588B2;
+    /*border-bottom: 3px solid #E6E6E6;*/
+}
+
+.district {
+    margin: 0;
+
+}
+
+.bus-select {
+    min-height: 200px;
+}
+.checkbox-region {
+    background-color: white;
+    /*margin-: 40px;*/
+    border: 1px solid #DBDFD6;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+    border-top: 2em solid #9588B2;
+    margin-top: 2em;
+}
+
+.route-checkbox-region-inner {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.bus-select-region-inner {
+    margin-top: 20px;
+    margin-left: 20px;
+    min-height: 200px;
+}
+
+.upload-file {
+    /*position: absolute;*/
+    /*right: 0px;*/
+    /*top: 0px;*/
+    /*font-family: Arial;*/
+    /*font-size: 118px;*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+    /*cursor: pointer;*/
+    /*opacity: 0;*/
+    margin-top: 400px;
+    padding-top: 20px;
+}
+.page .row {
+    margin: 0;
+}
+
+.route-head {
+    width: 100%;
+    position:relative;
+    background-color: #9588B2;
+    font-size: large;
+}
+
+.route-item {
+    padding: 10px;
+    text-align: center;
+    color: white !important;
+}
+.route-item:hover {
+    background-color: #8968AD
+}
+.route-item a{
+    color: white;
+}
+
+.itemActive {
+    background-color: white !important;
+    color: #58666E !important;
+}
+
+
+.itemActive a {
+    color: #58666E;
+}
+.v-middle {
+    /*text-align: center;*/
+}
+
+.ft-right {
+    float: right;
+}
+
+.loading-status {
+    width: 100%;
+    border: 1px #c0c0c0 solid;
+    height: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 2px 2px  #d0d4d6;
+    -moz-box-shadow: 0 2px 2px #d0d4d6;
+    box-shadow: 0 2px 2px #d0d4d6;
+    margin: 10px ;
+}
+
+
+.upload_process {
+    background: #6254B2;
+    width: 50%;
+    height: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -ms-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+.progress-bar {
+    background-color: #6254B2;
+}
+
+/*-------------------------------
+            LOGIN STYLES
+-------------------------------*/
+
+.login-body {
+    background: #65cea7 url("../images/login-bg.jpg") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.form-signin {
+    max-width: 330px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.form-signin .form-signin-heading {
+    margin: 0;
+    padding: 25px 15px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.sign-title {
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.form-signin .checkbox {
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+    color: #fff;
+    font-weight: normal;
+    /*font-family: 'Open Sans', sans-serif;*/
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    left: 0;
+}
+
+.form-signin .checkbox a, .form-signin .checkbox a:hover {
+    color: #fff;
+}
+
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="text"], .form-signin input[type="password"] {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #eaeaec;
+    background: #eaeaec;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+.form-signin .btn-login {
+    background: #6bc5a4;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    /*font-family: 'Open Sans', sans-serif;*/
+    margin: 20px 0 5px;
+    padding: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 30px;
+}
+
+.form-signin .btn-login:hover {
+    background: #688ac2;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.form-signin p {
+    text-align: left;
+    color: #b6b6b6;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.form-signin a, .form-signin a:hover {
+    color: #6bc5a4;
+}
+
+.form-signin a:hover {
+    text-decoration: underline;
+}
+
+.form-signin label.error {
+    margin: 5px 0;
+    width: auto;
+    color: #FF6C60;
+}
+
+.login-wrap {
+    padding: 20px;
+    position: relative;
+}
+
+.registration {
+    color: #c7c7c7;
+    text-align: center;
+    margin-top: 15px;
+}

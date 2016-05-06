@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Flask	C:\Users\admin\PycharmProjects\subversion\new-busad\basad.py	/^from flask import Flask, blueprints$/;"	namespace	line:2
+blueprints	C:\Users\admin\PycharmProjects\subversion\new-busad\basad.py	/^from flask import Flask, blueprints$/;"	namespace	line:2
+DefualtConfig	C:\Users\admin\PycharmProjects\subversion\new-busad\basad.py	/^from config import DefualtConfig$/;"	namespace	line:3
+db	C:\Users\admin\PycharmProjects\subversion\new-busad\basad.py	/^from extentions import db$/;"	namespace	line:4
+create_app	C:\Users\admin\PycharmProjects\subversion\new-busad\basad.py	/^def create_app():$/;"	function	line:7
+_init_extention	C:\Users\admin\PycharmProjects\subversion\new-busad\basad.py	/^def _init_extention(app):$/;"	function	line:19
+_register_blueprint	C:\Users\admin\PycharmProjects\subversion\new-busad\basad.py	/^def _register_blueprint(app):$/;"	function	line:23
+os	C:\Users\admin\PycharmProjects\subversion\new-busad\config.py	/^import os$/;"	namespace	line:2
+_basedir	C:\Users\admin\PycharmProjects\subversion\new-busad\config.py	/^_basedir = os.path.abspath(os.path.dirname(__file__))$/;"	variable	line:3
+DefualtConfig	C:\Users\admin\PycharmProjects\subversion\new-busad\config.py	/^class DefualtConfig(object):$/;"	class	line:5
+DEBUG	C:\Users\admin\PycharmProjects\subversion\new-busad\config.py	/^    DEBUG =  True$/;"	variable	line:7	class:DefualtConfig
+SQLALCHEMY_DATABASE_URI	C:\Users\admin\PycharmProjects\subversion\new-busad\config.py	/^    SQLALCHEMY_DATABASE_URI = os.path.join(_basedir, 'busad.sqlite')$/;"	variable	line:9	class:DefualtConfig
+SQLAlchemy	C:\Users\admin\PycharmProjects\subversion\new-busad\extentions.py	/^from flask_sqlalchemy import SQLAlchemy$/;"	namespace	line:2
+db	C:\Users\admin\PycharmProjects\subversion\new-busad\extentions.py	/^db = SQLAlchemy()/;"	variable	line:4
+new-busad	C:\Users\admin\PycharmProjects\subversion\new-busad\README.md	/^#new-busad$/;"	function	line:1
+html	C:\Users\admin\PycharmProjects\subversion\new-busad\templates\layout.html	/^<html lang="en">$/;"	function	line:2
+head	C:\Users\admin\PycharmProjects\subversion\new-busad\templates\layout.html	/^<head>$/;"	function	line:3
+meta	C:\Users\admin\PycharmProjects\subversion\new-busad\templates\layout.html	/^    <meta charset="UTF-8">$/;"	function	line:4
+title	C:\Users\admin\PycharmProjects\subversion\new-busad\templates\layout.html	/^    <title>Bus AD<\/title>$/;"	function	line:5
+link	C:\Users\admin\PycharmProjects\subversion\new-busad\templates\layout.html	/^    <link href="\/\/cdn.bootcss.com\/bootstrap\/4.0.0-alpha.2\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:7
+link	C:\Users\admin\PycharmProjects\subversion\new-busad\templates\layout.html	/^    <link href="\/static\/css\/style.css" >$/;"	function	line:8
+body	C:\Users\admin\PycharmProjects\subversion\new-busad\templates\layout.html	/^<body>$/;"	function	line:11
+script	C:\Users\admin\PycharmProjects\subversion\new-busad\templates\layout.html	/^  <script src="\/\/cdn.bootcss.com\/jquery\/3.0.0-beta1\/jquery.js"><\/script>$/;"	function	line:18
+Blueprint	C:\Users\admin\PycharmProjects\subversion\new-busad\views\admin_view.py	/^from flask import Blueprint$/;"	namespace	line:2
+admin_blueprint	C:\Users\admin\PycharmProjects\subversion\new-busad\views\admin_view.py	/^admin_blueprint = Blueprint('admin', __name__)/;"	variable	line:4
+Blueprint	C:\Users\admin\PycharmProjects\subversion\new-busad\views\auth.py	/^from flask import Blueprint$/;"	namespace	line:2
+auth_blueprint	C:\Users\admin\PycharmProjects\subversion\new-busad\views\auth.py	/^auth_blueprint = Blueprint('auth', __name__)$/;"	variable	line:4
+login	C:\Users\admin\PycharmProjects\subversion\new-busad\views\auth.py	/^def login():$/;"	function	line:7
+Blueprint	C:\Users\admin\PycharmProjects\subversion\new-busad\views\busad_view.py	/^from flask import Blueprint$/;"	namespace	line:2
+busad_blueprint	C:\Users\admin\PycharmProjects\subversion\new-busad\views\busad_view.py	/^busad_blueprint = Blueprint('basad', __name__)$/;"	variable	line:4
